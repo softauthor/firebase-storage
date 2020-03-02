@@ -1,0 +1,69 @@
+<!doctype html>
+
+<head>
+  <title>Learn Firebase Storage Quickly</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css" />
+</head>
+
+<body>
+
+  <br>
+
+  <div class="ui two column middle aligned center aligned grid">
+    <div class="column">
+      <form class="ui large form">
+
+        <div class="ui stacked secondary segment">
+          <div class="field">
+            <div class="ui left icon input large">
+              <i class="user icon"></i>
+              <input type="text" placeholder="E-mail address" id="email" />
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui left icon input large">
+              <i class="lock icon"></i>
+              <input type="text" placeholder="Password" id="pword" />
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="ui left icon input large">
+              <i class="image icon"></i>
+              <input type="file" id="fileUploader" />
+            </div>
+          </div>
+          <div class=" ui fluid large teal submit button" onclick="signUpUser()">Sign Up</div>
+        </div>
+
+        <div class="ui large image">
+          <img id="img">
+        </div>
+
+        <div class="field">
+          <h3>Upload An Image</h3>
+          <input type="file" onchange="uploadImage()">
+        </div>
+
+
+        <div class="field">
+          <h3>Upload Multiple Images</h3>
+          <input type="file" onchange="uploadMultipleImages()" multiple>
+        </div>
+
+
+
+
+      </form>
+    </div>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-storage.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
